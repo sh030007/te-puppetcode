@@ -19,7 +19,6 @@
 
 # Define filebucket 'main':
 filebucket { 'main':
-  server => 'waldorf.puppetlabs.vm',
   path   => false,
 }
 

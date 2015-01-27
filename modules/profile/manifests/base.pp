@@ -4,6 +4,6 @@
 
 class profile::base {
 
-  notify { "Hello there, ${::fqdn}": }
+  notify { "This came from site.pp in the ${::environment} environment.": }
 
 }
