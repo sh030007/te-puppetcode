@@ -4,8 +4,9 @@
 
 class profile::base {
 
-  notify { 'site.pp':
-    message => "This came from site.pp in the ${::environment} environment.",
+  file { '/etc/environment':
+    ensure => file,
+    content => "${::environment}\n",
   }
 
 }
