@@ -4,6 +4,8 @@
 
 class profile::base {
 
-  notify { "This came from site.pp in the ${::environment} environment.": }
+  notify { 'site.pp':
+    message => "This came from site.pp in the ${::environment} environment.",
+  }
 
 }
