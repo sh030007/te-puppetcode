@@ -36,7 +36,7 @@ File { backup => 'main' }
 # specified in the console for that node.
 
 node default {
-  include profile::base
+
 }
 
 Package { allow_virtual => true, }
