@@ -4,9 +4,9 @@
 
 class profile::base {
 
-  file { '/etc/environment':
+  file { 'c:\puppetclass.txt':
     ensure => file,
-    content => "${::environment}\n",
+    content => "Hallo, gut gemacht \n this is ${::environment}\n",
   }
 
 }
