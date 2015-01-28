@@ -6,7 +6,7 @@ class profile::base {
 
   file { 'c:\puppetclass.txt':
     ensure => file,
-    content => "Hallo, gut gemacht \n this is ${::environment}\n",
+    content => "Halloooooooo, gut gemacht \n this is ${::environment}\n",
   }
 
 }
